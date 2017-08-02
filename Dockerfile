@@ -25,7 +25,7 @@ RUN make install.info || true # Issue 4
 # run as a non privileged user, as zsh test suite is not designed to run as root
 RUN adduser -s /bin/sh -D $test_user
 RUN chown -R $test_user $build_directory
-RUN su - $test_user -c "cd $build_directory && make test || true"
+RUN su - $test_user -c "cd $build_directory && make test"
 RUN deluser --remove-home $test_user
 
 # Cleaning
