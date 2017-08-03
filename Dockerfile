@@ -4,7 +4,7 @@ FROM alpine
 # Arguments
 ARG url
 ARG build_directory=/tmp/zsh
-ARG build_dependencies='coreutils util-linux curl git make automake autoconf gcc binutils libc-dev ncurses-dev pcre-dev yodl texinfo man man-pages mdocml-apropos groff'
+ARG build_dependencies='coreutils diffutils util-linux curl git make automake autoconf gcc binutils libc-dev ncurses-dev pcre-dev yodl texinfo man man-pages mdocml-apropos groff'
 ARG runtime_dependencies='pcre libcap gdbm'
 ARG test_user=zsh
 
